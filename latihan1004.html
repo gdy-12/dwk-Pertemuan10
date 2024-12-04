@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Ganti Text</title>
+</head>
+<body>
+
+    <p id="view">Tulis Disini</p>
+
+    <input type="text" id="ganti">
+    <button id="cmdganti">Ganti Text</button>    
+
+
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#view').html("<strong>Lihatlah dan Bukalah Mata Hatimu</strong>")
+            $('#cmdganti').on('click',function(){
+                let txbaru = $('#ganti').val()
+                $('#view').html(txbaru)
+            })
+        })
+    </script>
+</body>
+</html>

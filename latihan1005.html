@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Menghitung Luas Persegi</title>
+</head>
+<body>
+    <h3>Hitung Luas Persegi</h3>
+    <div>Nilai Panjang <input type="text" id="panjang"></div>
+    <div>Nilai Lebar <input type="text" id="lebar"></div>
+    <div><button id="cmdhitung">Hitung Luas</button></div>
+    <div><span class="vhasil"></span></div>
+
+
+    <script src="jquery/jquery-3.7.1.min.js\"></script>
+    <script>
+        $(function(){
+            $('#cmdhitung').on('click',function(){
+                let pj = $('#panjang').val()
+                let lb = $('#lebar').val()
+                let luas = pj*lb
+                let info = "Hitung Luas Persegi<br>"
+                info += "Nilai Panjang: "+pj+"<br>"
+                info += "Nilai Panjang: "+lb+"<br>"
+                info += "Luas = Panjang X Lebar<br>"
+                info += "Luas = "+pj+" X "+lb+",<br>"
+                info += "Luas = "+ luas
+                $
+            })
+        })
+    </script>
+</body>
+</html>
